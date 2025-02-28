@@ -78,10 +78,10 @@ class VirtualMachine:
                     async with self.queue_lock:
                         await self.message_queue.put(message)
                         queue_size = self.message_queue.qsize()
-                        self.logger.debug(
-                            f"Queued message from VM {message['sender']} "
+                        self.logger.info(
+                            f"RECEIVED: Message from VM {message['sender']} "
                             f"with logical time {message['clock']} | "
-                            f"Queue size: {queue_size}"
+                            f"Added to queue (now size: {queue_size})"
                         )
                 
             except Exception as e:
@@ -118,7 +118,7 @@ class VirtualMachine:
                     await writer.drain()
                     sent_count += 1
                     self.logger.info(
-                        f"Sent message to VM {target_id} at logical time {self.logical_clock}"
+                        f"SENT: Message to VM {target_id} at logical time {self.logical_clock}"
                     )
                 except Exception as e:
                     self.logger.error(f"Failed to send message to VM {target_id}: {e}")
@@ -142,9 +142,9 @@ class VirtualMachine:
                         
                         self.update_logical_clock(received_clock)
                         self.logger.info(
-                            f"Received message from VM {message['sender']} | "
-                            f"Queue length: {queue_size} | "
-                            f"Logical clock: {self.logical_clock}"
+                            f"PROCESSED: Message from VM {message['sender']} | "
+                            f"Remaining queue size: {queue_size} | "
+                            f"Updated logical clock: {self.logical_clock}"
                         )
                 
                     else:
@@ -166,7 +166,7 @@ class VirtualMachine:
                         else:
                             # Internal event
                             self.update_logical_clock()
-                            self.logger.info(f"Internal event | Logical clock: {self.logical_clock}")
+                            self.logger.info(f"INTERNAL EVENT: Logical clock: {self.logical_clock}")
                         
             except Exception as e:
                 self.logger.error(f"Error in run loop: {e}")

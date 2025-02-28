@@ -55,3 +55,12 @@ Log files are created in the `logs` directory with the format `machine_<id>.log`
 - Event type (send/receive/internal)
 - Message queue length (for receive events)
 - Logical clock value
+
+### Explanations
+Actions constrained by clock rate: 
+- "PROCESSED" events (processing a message from queue)
+- "INTERNAL EVENT" events
+- "SENT" events
+
+Actions not constrained by clock rate:
+- "RECEIVED" events (these happen whenever other VMs send messages)
