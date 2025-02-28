@@ -21,6 +21,8 @@ class VirtualMachine:
         self.message_queue = asyncio.Queue()
         self.connections: Dict[int, asyncio.StreamWriter] = {}
         self.port = BASE_PORT + machine_id
+        self.received_messages = set()  # Track unique messages
+        self.queue_lock = asyncio.Lock()  # Lock for queue operations
         
         # Setup logging
         os.makedirs(LOG_DIR, exist_ok=True)
@@ -57,16 +59,34 @@ class VirtualMachine:
         """Handle incoming connections and messages."""
         while True:
             try:
-                data = await reader.read(100)
+                # Read message length first (4 bytes)
+                length_data = await reader.read(4)
+                if not length_data:
+                    break
+                    
+                msg_length = int.from_bytes(length_data, 'big')
+                data = await reader.read(msg_length)
                 if not data:
                     break
                 
                 message = json.loads(data.decode())
-                await self.message_queue.put(message)
+                message_id = f"{message['sender']}_{message['clock']}"  # Create unique message ID
+                
+                # Only process message if we haven't seen it before
+                if message_id not in self.received_messages:
+                    self.received_messages.add(message_id)
+                    async with self.queue_lock:
+                        await self.message_queue.put(message)
+                        queue_size = self.message_queue.qsize()
+                        self.logger.debug(
+                            f"Queued message from VM {message['sender']} "
+                            f"with logical time {message['clock']} | "
+                            f"Queue size: {queue_size}"
+                        )
                 
             except Exception as e:
                 self.logger.error(f"Error handling connection: {e}")
-                break
+                continue  # Don't break on parse errors, try next message
 
     def update_logical_clock(self, received_time: Optional[int] = None):
         """Update the logical clock based on Lamport's rules."""
@@ -79,19 +99,32 @@ class VirtualMachine:
         """Send message to specified target machines."""
         message = {
             'sender': self.id,
-            'clock': self.logical_clock,
-            'timestamp': datetime.now().isoformat()
+            'clock': self.logical_clock
         }
         
+        # Encode message
+        msg_bytes = json.dumps(message).encode()
+        msg_length = len(msg_bytes)
+        length_bytes = msg_length.to_bytes(4, 'big')
+        
+        sent_count = 0
         for target_id in target_ids:
             if target_id in self.connections:
                 writer = self.connections[target_id]
                 try:
-                    writer.write(json.dumps(message).encode())
+                    # Send length followed by message
+                    writer.write(length_bytes)
+                    writer.write(msg_bytes)
                     await writer.drain()
-                    self.logger.info(f"Sent message to VM {target_id} at logical time {self.logical_clock}")
+                    sent_count += 1
+                    self.logger.info(
+                        f"Sent message to VM {target_id} at logical time {self.logical_clock}"
+                    )
                 except Exception as e:
                     self.logger.error(f"Failed to send message to VM {target_id}: {e}")
+        
+        if sent_count > 0:
+            self.logger.debug(f"Successfully sent message to {sent_count} machines")
 
     async def run(self):
         """Main run loop of the virtual machine."""
@@ -101,36 +134,39 @@ class VirtualMachine:
                 await asyncio.sleep(1 / self.clock_rate)
                 
                 # Check for messages
-                if not self.message_queue.empty():
-                    message = await self.message_queue.get()
-                    received_clock = message['clock']
-                    self.update_logical_clock(received_clock)
-                    self.logger.info(
-                        f"Received message from VM {message['sender']} | "
-                        f"Queue length: {self.message_queue.qsize()} | "
-                        f"Logical clock: {self.logical_clock}"
-                    )
+                async with self.queue_lock:
+                    if not self.message_queue.empty():
+                        message = await self.message_queue.get()
+                        received_clock = message['clock']
+                        queue_size = self.message_queue.qsize()  # Get size while holding lock
+                        
+                        self.update_logical_clock(received_clock)
+                        self.logger.info(
+                            f"Received message from VM {message['sender']} | "
+                            f"Queue length: {queue_size} | "
+                            f"Logical clock: {self.logical_clock}"
+                        )
                 
-                else:
-                    # Generate random event
-                    event = random.randint(MIN_RANDOM, MAX_RANDOM)
-                    
-                    if event in SEND_TO_ONE:
-                        # Send to one random machine
-                        target = random.choice([i for i in range(self.total_machines) if i != self.id])
-                        self.update_logical_clock()
-                        await self.send_message([target])
-                        
-                    elif event in SEND_TO_ALL:
-                        # Send to all machines
-                        self.update_logical_clock()
-                        targets = [i for i in range(self.total_machines) if i != self.id]
-                        await self.send_message(targets)
-                        
                     else:
-                        # Internal event
-                        self.update_logical_clock()
-                        self.logger.info(f"Internal event | Logical clock: {self.logical_clock}")
+                        # Generate random event
+                        event = random.randint(MIN_RANDOM, MAX_RANDOM)
+                        
+                        if event in SEND_TO_ONE:
+                            # Send to one random machine
+                            target = random.choice([i for i in range(self.total_machines) if i != self.id])
+                            self.update_logical_clock()
+                            await self.send_message([target])
+                            
+                        elif event in SEND_TO_ALL:
+                            # Send to all machines
+                            self.update_logical_clock()
+                            targets = [i for i in range(self.total_machines) if i != self.id]
+                            await self.send_message(targets)
+                            
+                        else:
+                            # Internal event
+                            self.update_logical_clock()
+                            self.logger.info(f"Internal event | Logical clock: {self.logical_clock}")
                         
             except Exception as e:
                 self.logger.error(f"Error in run loop: {e}")
