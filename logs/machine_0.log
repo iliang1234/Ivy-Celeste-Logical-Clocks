@@ -1,0 +1,69 @@
+2025-02-28 14:48:54,136 - Initialized VM 0 with clock rate 4 ticks/second
+2025-02-28 14:48:54,137 - Server started on 127.0.0.1:5000
+2025-02-28 14:48:55,140 - Connected to VM 1
+2025-02-28 14:48:55,141 - Connected to VM 2
+2025-02-28 14:48:55,392 - Internal event | Logical clock: 1
+2025-02-28 14:48:55,643 - Internal event | Logical clock: 2
+2025-02-28 14:48:55,894 - Internal event | Logical clock: 3
+2025-02-28 14:48:56,145 - Internal event | Logical clock: 4
+2025-02-28 14:48:56,396 - Internal event | Logical clock: 5
+2025-02-28 14:48:56,647 - Internal event | Logical clock: 6
+2025-02-28 14:48:56,898 - Internal event | Logical clock: 7
+2025-02-28 14:48:57,149 - Received message from VM 2 | Queue length: 0 | Logical clock: 8
+2025-02-28 14:48:57,400 - Internal event | Logical clock: 9
+2025-02-28 14:48:57,651 - Internal event | Logical clock: 10
+2025-02-28 14:48:57,903 - Received message from VM 2 | Queue length: 0 | Logical clock: 11
+2025-02-28 14:48:58,153 - Internal event | Logical clock: 12
+2025-02-28 14:48:58,404 - Sent message to VM 1 at logical time 13
+2025-02-28 14:48:58,654 - Received message from VM 2 | Queue length: 0 | Logical clock: 14
+2025-02-28 14:48:58,905 - Received message from VM 2 | Queue length: 0 | Logical clock: 15
+2025-02-28 14:48:59,156 - Sent message to VM 2 at logical time 16
+2025-02-28 14:48:59,407 - Received message from VM 2 | Queue length: 0 | Logical clock: 17
+2025-02-28 14:48:59,658 - Internal event | Logical clock: 18
+2025-02-28 14:48:59,909 - Internal event | Logical clock: 19
+2025-02-28 14:49:00,160 - Internal event | Logical clock: 20
+2025-02-28 14:49:00,411 - Received message from VM 2 | Queue length: 0 | Logical clock: 21
+2025-02-28 14:49:00,662 - Internal event | Logical clock: 22
+2025-02-28 14:49:00,913 - Internal event | Logical clock: 23
+2025-02-28 14:49:01,164 - Internal event | Logical clock: 24
+2025-02-28 14:49:01,415 - Internal event | Logical clock: 25
+2025-02-28 14:49:01,667 - Sent message to VM 1 at logical time 26
+2025-02-28 14:49:01,918 - Internal event | Logical clock: 27
+2025-02-28 14:49:02,169 - Internal event | Logical clock: 28
+2025-02-28 14:49:02,420 - Internal event | Logical clock: 29
+2025-02-28 14:49:02,671 - Internal event | Logical clock: 30
+2025-02-28 14:49:02,922 - Received message from VM 2 | Queue length: 0 | Logical clock: 31
+2025-02-28 14:49:03,173 - Internal event | Logical clock: 32
+2025-02-28 14:49:03,425 - Sent message to VM 2 at logical time 33
+2025-02-28 14:49:03,676 - Received message from VM 2 | Queue length: 0 | Logical clock: 34
+2025-02-28 14:49:03,927 - Internal event | Logical clock: 35
+2025-02-28 14:49:04,178 - Sent message to VM 1 at logical time 36
+2025-02-28 14:49:04,430 - Internal event | Logical clock: 37
+2025-02-28 14:49:04,680 - Internal event | Logical clock: 38
+2025-02-28 14:49:04,932 - Internal event | Logical clock: 39
+2025-02-28 14:49:05,183 - Internal event | Logical clock: 40
+2025-02-28 14:49:05,434 - Sent message to VM 1 at logical time 41
+2025-02-28 14:49:05,434 - Sent message to VM 2 at logical time 41
+2025-02-28 14:49:05,685 - Sent message to VM 2 at logical time 42
+2025-02-28 14:49:05,937 - Sent message to VM 1 at logical time 43
+2025-02-28 14:49:06,187 - Sent message to VM 1 at logical time 44
+2025-02-28 14:49:06,438 - Received message from VM 2 | Queue length: 0 | Logical clock: 45
+2025-02-28 14:49:06,690 - Sent message to VM 1 at logical time 46
+2025-02-28 14:49:06,690 - Sent message to VM 2 at logical time 46
+2025-02-28 14:49:06,941 - Received message from VM 2 | Queue length: 0 | Logical clock: 47
+2025-02-28 14:49:07,192 - Internal event | Logical clock: 48
+2025-02-28 14:49:07,443 - Sent message to VM 2 at logical time 49
+2025-02-28 14:49:07,694 - Internal event | Logical clock: 50
+2025-02-28 14:49:07,945 - Internal event | Logical clock: 51
+2025-02-28 14:49:08,196 - Internal event | Logical clock: 52
+2025-02-28 14:49:08,448 - Received message from VM 2 | Queue length: 0 | Logical clock: 53
+2025-02-28 14:49:08,698 - Sent message to VM 2 at logical time 54
+2025-02-28 14:49:08,948 - Internal event | Logical clock: 55
+2025-02-28 14:49:09,200 - Sent message to VM 1 at logical time 56
+2025-02-28 14:49:09,200 - Sent message to VM 2 at logical time 56
+2025-02-28 14:49:09,450 - Received message from VM 2 | Queue length: 0 | Logical clock: 57
+2025-02-28 14:49:09,702 - Sent message to VM 1 at logical time 58
+2025-02-28 14:49:09,702 - Sent message to VM 2 at logical time 58
+2025-02-28 14:49:09,953 - Received message from VM 2 | Queue length: 0 | Logical clock: 59
+2025-02-28 14:49:10,204 - Internal event | Logical clock: 60
+2025-02-28 14:49:10,455 - Received message from VM 2 | Queue length: 0 | Logical clock: 61

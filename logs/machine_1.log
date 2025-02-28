@@ -1,0 +1,19 @@
+2025-02-28 14:48:54,137 - Initialized VM 1 with clock rate 1 ticks/second
+2025-02-28 14:48:54,137 - Server started on 127.0.0.1:5001
+2025-02-28 14:48:55,140 - Connected to VM 0
+2025-02-28 14:48:55,141 - Connected to VM 2
+2025-02-28 14:48:56,142 - Internal event | Logical clock: 1
+2025-02-28 14:48:57,143 - Internal event | Logical clock: 2
+2025-02-28 14:48:58,144 - Internal event | Logical clock: 3
+2025-02-28 14:48:59,145 - Received message from VM 2 | Queue length: 3 | Logical clock: 13
+2025-02-28 14:49:00,145 - Received message from VM 0 | Queue length: 4 | Logical clock: 14
+2025-02-28 14:49:01,147 - Received message from VM 2 | Queue length: 5 | Logical clock: 15
+2025-02-28 14:49:02,148 - Received message from VM 2 | Queue length: 5 | Logical clock: 16
+2025-02-28 14:49:03,149 - Received message from VM 2 | Queue length: 5 | Logical clock: 17
+2025-02-28 14:49:04,150 - Received message from VM 2 | Queue length: 5 | Logical clock: 20
+2025-02-28 14:49:05,152 - Received message from VM 2 | Queue length: 6 | Logical clock: 21
+2025-02-28 14:49:06,152 - Received message from VM 2 | Queue length: 8 | Logical clock: 23
+2025-02-28 14:49:07,153 - Received message from VM 0 | Queue length: 10 | Logical clock: 27
+2025-02-28 14:49:08,155 - Received message from VM 2 | Queue length: 9 | Logical clock: 31
+2025-02-28 14:49:09,155 - Received message from VM 2 | Queue length: 9 | Logical clock: 34
+2025-02-28 14:49:10,156 - Received message from VM 0 | Queue length: 10 | Logical clock: 37
