@@ -1,0 +1,374 @@
+2025-03-03 14:55:02,351 - Initialized VM 1 with clock rate 4 ticks/second
+2025-03-03 14:55:02,351 - Server started on 127.0.0.1:5001
+2025-03-03 14:55:03,354 - Connected to VM 0
+2025-03-03 14:55:03,355 - Connected to VM 2
+2025-03-03 14:55:03,607 - INTERNAL EVENT: Logical clock: 1
+2025-03-03 14:55:03,858 - INTERNAL EVENT: Logical clock: 2
+2025-03-03 14:55:04,025 - RECEIVED: Message from VM 2 with logical time 2 | Added to queue (now size: 1)
+2025-03-03 14:55:04,109 - PROCESSED: Message from VM 2 | Remaining queue size: 0 | Updated logical clock: 3
+2025-03-03 14:55:04,359 - RECEIVED: Message from VM 2 with logical time 3 | Added to queue (now size: 1)
+2025-03-03 14:55:04,359 - PROCESSED: Message from VM 2 | Remaining queue size: 0 | Updated logical clock: 4
+2025-03-03 14:55:04,610 - SENT: Message to VM 2 at logical time 5
+2025-03-03 14:55:04,610 - RECEIVED: Message from VM 0 with logical time 5 | Added to queue (now size: 1)
+2025-03-03 14:55:04,861 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 6
+2025-03-03 14:55:05,028 - RECEIVED: Message from VM 2 with logical time 7 | Added to queue (now size: 1)
+2025-03-03 14:55:05,111 - PROCESSED: Message from VM 2 | Remaining queue size: 0 | Updated logical clock: 8
+2025-03-03 14:55:05,362 - RECEIVED: Message from VM 2 with logical time 8 | Added to queue (now size: 1)
+2025-03-03 14:55:05,362 - PROCESSED: Message from VM 2 | Remaining queue size: 0 | Updated logical clock: 9
+2025-03-03 14:55:05,613 - INTERNAL EVENT: Logical clock: 10
+2025-03-03 14:55:05,613 - RECEIVED: Message from VM 0 with logical time 10 | Added to queue (now size: 1)
+2025-03-03 14:55:05,865 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 11
+2025-03-03 14:55:05,865 - RECEIVED: Message from VM 0 with logical time 11 | Added to queue (now size: 1)
+2025-03-03 14:55:06,116 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 12
+2025-03-03 14:55:06,116 - RECEIVED: Message from VM 0 with logical time 12 | Added to queue (now size: 1)
+2025-03-03 14:55:06,366 - RECEIVED: Message from VM 2 with logical time 13 | Added to queue (now size: 2)
+2025-03-03 14:55:06,366 - PROCESSED: Message from VM 0 | Remaining queue size: 1 | Updated logical clock: 13
+2025-03-03 14:55:06,617 - PROCESSED: Message from VM 2 | Remaining queue size: 0 | Updated logical clock: 14
+2025-03-03 14:55:06,868 - INTERNAL EVENT: Logical clock: 15
+2025-03-03 14:55:06,869 - RECEIVED: Message from VM 0 with logical time 15 | Added to queue (now size: 1)
+2025-03-03 14:55:07,035 - RECEIVED: Message from VM 2 with logical time 16 | Added to queue (now size: 2)
+2025-03-03 14:55:07,120 - PROCESSED: Message from VM 0 | Remaining queue size: 1 | Updated logical clock: 16
+2025-03-03 14:55:07,370 - PROCESSED: Message from VM 2 | Remaining queue size: 0 | Updated logical clock: 17
+2025-03-03 14:55:07,370 - RECEIVED: Message from VM 0 with logical time 17 | Added to queue (now size: 1)
+2025-03-03 14:55:07,621 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 18
+2025-03-03 14:55:07,621 - RECEIVED: Message from VM 0 with logical time 18 | Added to queue (now size: 1)
+2025-03-03 14:55:07,704 - RECEIVED: Message from VM 2 with logical time 18 | Added to queue (now size: 2)
+2025-03-03 14:55:07,872 - PROCESSED: Message from VM 0 | Remaining queue size: 1 | Updated logical clock: 19
+2025-03-03 14:55:08,124 - PROCESSED: Message from VM 2 | Remaining queue size: 0 | Updated logical clock: 20
+2025-03-03 14:55:08,374 - SENT: Message to VM 0 at logical time 21
+2025-03-03 14:55:08,374 - SENT: Message to VM 2 at logical time 21
+2025-03-03 14:55:08,374 - RECEIVED: Message from VM 0 with logical time 21 | Added to queue (now size: 1)
+2025-03-03 14:55:08,625 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 22
+2025-03-03 14:55:08,877 - SENT: Message to VM 0 at logical time 23
+2025-03-03 14:55:08,877 - SENT: Message to VM 2 at logical time 23
+2025-03-03 14:55:09,127 - INTERNAL EVENT: Logical clock: 24
+2025-03-03 14:55:09,378 - SENT: Message to VM 0 at logical time 25
+2025-03-03 14:55:09,629 - SENT: Message to VM 0 at logical time 26
+2025-03-03 14:55:09,629 - SENT: Message to VM 2 at logical time 26
+2025-03-03 14:55:09,880 - SENT: Message to VM 0 at logical time 27
+2025-03-03 14:55:09,880 - SENT: Message to VM 2 at logical time 27
+2025-03-03 14:55:10,131 - INTERNAL EVENT: Logical clock: 28
+2025-03-03 14:55:10,381 - SENT: Message to VM 0 at logical time 29
+2025-03-03 14:55:10,381 - SENT: Message to VM 2 at logical time 29
+2025-03-03 14:55:10,632 - INTERNAL EVENT: Logical clock: 30
+2025-03-03 14:55:10,882 - SENT: Message to VM 0 at logical time 31
+2025-03-03 14:55:10,883 - SENT: Message to VM 2 at logical time 31
+2025-03-03 14:55:10,883 - RECEIVED: Message from VM 0 with logical time 31 | Added to queue (now size: 1)
+2025-03-03 14:55:11,133 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 32
+2025-03-03 14:55:11,383 - SENT: Message to VM 0 at logical time 33
+2025-03-03 14:55:11,384 - SENT: Message to VM 2 at logical time 33
+2025-03-03 14:55:11,635 - INTERNAL EVENT: Logical clock: 34
+2025-03-03 14:55:11,886 - SENT: Message to VM 0 at logical time 35
+2025-03-03 14:55:12,137 - INTERNAL EVENT: Logical clock: 36
+2025-03-03 14:55:12,388 - INTERNAL EVENT: Logical clock: 37
+2025-03-03 14:55:12,639 - SENT: Message to VM 0 at logical time 38
+2025-03-03 14:55:12,639 - RECEIVED: Message from VM 0 with logical time 38 | Added to queue (now size: 1)
+2025-03-03 14:55:12,890 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 39
+2025-03-03 14:55:13,140 - INTERNAL EVENT: Logical clock: 40
+2025-03-03 14:55:13,390 - SENT: Message to VM 2 at logical time 41
+2025-03-03 14:55:13,642 - SENT: Message to VM 0 at logical time 42
+2025-03-03 14:55:13,893 - SENT: Message to VM 2 at logical time 43
+2025-03-03 14:55:14,143 - INTERNAL EVENT: Logical clock: 44
+2025-03-03 14:55:14,394 - INTERNAL EVENT: Logical clock: 45
+2025-03-03 14:55:14,645 - SENT: Message to VM 0 at logical time 46
+2025-03-03 14:55:14,645 - SENT: Message to VM 2 at logical time 46
+2025-03-03 14:55:14,896 - SENT: Message to VM 0 at logical time 47
+2025-03-03 14:55:14,896 - SENT: Message to VM 2 at logical time 47
+2025-03-03 14:55:15,147 - SENT: Message to VM 0 at logical time 48
+2025-03-03 14:55:15,147 - SENT: Message to VM 2 at logical time 48
+2025-03-03 14:55:15,398 - INTERNAL EVENT: Logical clock: 49
+2025-03-03 14:55:15,649 - INTERNAL EVENT: Logical clock: 50
+2025-03-03 14:55:15,900 - SENT: Message to VM 0 at logical time 51
+2025-03-03 14:55:15,900 - SENT: Message to VM 2 at logical time 51
+2025-03-03 14:55:16,152 - SENT: Message to VM 0 at logical time 52
+2025-03-03 14:55:16,152 - SENT: Message to VM 2 at logical time 52
+2025-03-03 14:55:16,402 - SENT: Message to VM 0 at logical time 53
+2025-03-03 14:55:16,653 - INTERNAL EVENT: Logical clock: 54
+2025-03-03 14:55:16,731 - RECEIVED: Message from VM 2 with logical time 54 | Added to queue (now size: 1)
+2025-03-03 14:55:16,905 - PROCESSED: Message from VM 2 | Remaining queue size: 0 | Updated logical clock: 55
+2025-03-03 14:55:17,155 - SENT: Message to VM 2 at logical time 56
+2025-03-03 14:55:17,406 - SENT: Message to VM 2 at logical time 57
+2025-03-03 14:55:17,407 - RECEIVED: Message from VM 0 with logical time 57 | Added to queue (now size: 1)
+2025-03-03 14:55:17,657 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 58
+2025-03-03 14:55:17,908 - SENT: Message to VM 0 at logical time 59
+2025-03-03 14:55:18,159 - SENT: Message to VM 0 at logical time 60
+2025-03-03 14:55:18,159 - SENT: Message to VM 2 at logical time 60
+2025-03-03 14:55:18,410 - INTERNAL EVENT: Logical clock: 61
+2025-03-03 14:55:18,660 - SENT: Message to VM 0 at logical time 62
+2025-03-03 14:55:18,660 - SENT: Message to VM 2 at logical time 62
+2025-03-03 14:55:18,660 - RECEIVED: Message from VM 0 with logical time 62 | Added to queue (now size: 1)
+2025-03-03 14:55:18,911 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 63
+2025-03-03 14:55:19,162 - SENT: Message to VM 0 at logical time 64
+2025-03-03 14:55:19,412 - INTERNAL EVENT: Logical clock: 65
+2025-03-03 14:55:19,664 - INTERNAL EVENT: Logical clock: 66
+2025-03-03 14:55:19,664 - RECEIVED: Message from VM 0 with logical time 66 | Added to queue (now size: 1)
+2025-03-03 14:55:19,915 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 67
+2025-03-03 14:55:20,076 - RECEIVED: Message from VM 2 with logical time 68 | Added to queue (now size: 1)
+2025-03-03 14:55:20,166 - PROCESSED: Message from VM 2 | Remaining queue size: 0 | Updated logical clock: 69
+2025-03-03 14:55:20,417 - SENT: Message to VM 0 at logical time 70
+2025-03-03 14:55:20,667 - INTERNAL EVENT: Logical clock: 71
+2025-03-03 14:55:20,919 - SENT: Message to VM 2 at logical time 72
+2025-03-03 14:55:20,919 - RECEIVED: Message from VM 0 with logical time 72 | Added to queue (now size: 1)
+2025-03-03 14:55:21,170 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 73
+2025-03-03 14:55:21,420 - SENT: Message to VM 0 at logical time 74
+2025-03-03 14:55:21,671 - INTERNAL EVENT: Logical clock: 75
+2025-03-03 14:55:21,922 - SENT: Message to VM 0 at logical time 76
+2025-03-03 14:55:21,923 - SENT: Message to VM 2 at logical time 76
+2025-03-03 14:55:22,173 - INTERNAL EVENT: Logical clock: 77
+2025-03-03 14:55:22,423 - SENT: Message to VM 0 at logical time 78
+2025-03-03 14:55:22,423 - SENT: Message to VM 2 at logical time 78
+2025-03-03 14:55:22,424 - RECEIVED: Message from VM 0 with logical time 78 | Added to queue (now size: 1)
+2025-03-03 14:55:22,675 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 79
+2025-03-03 14:55:22,926 - SENT: Message to VM 0 at logical time 80
+2025-03-03 14:55:22,926 - RECEIVED: Message from VM 0 with logical time 80 | Added to queue (now size: 1)
+2025-03-03 14:55:23,177 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 81
+2025-03-03 14:55:23,428 - SENT: Message to VM 0 at logical time 82
+2025-03-03 14:55:23,428 - SENT: Message to VM 2 at logical time 82
+2025-03-03 14:55:23,429 - RECEIVED: Message from VM 0 with logical time 82 | Added to queue (now size: 1)
+2025-03-03 14:55:23,679 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 83
+2025-03-03 14:55:23,930 - INTERNAL EVENT: Logical clock: 84
+2025-03-03 14:55:23,930 - RECEIVED: Message from VM 0 with logical time 84 | Added to queue (now size: 1)
+2025-03-03 14:55:24,181 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 85
+2025-03-03 14:55:24,433 - SENT: Message to VM 0 at logical time 86
+2025-03-03 14:55:24,433 - SENT: Message to VM 2 at logical time 86
+2025-03-03 14:55:24,433 - RECEIVED: Message from VM 0 with logical time 86 | Added to queue (now size: 1)
+2025-03-03 14:55:24,683 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 87
+2025-03-03 14:55:24,935 - SENT: Message to VM 2 at logical time 88
+2025-03-03 14:55:25,186 - SENT: Message to VM 0 at logical time 89
+2025-03-03 14:55:25,186 - SENT: Message to VM 2 at logical time 89
+2025-03-03 14:55:25,437 - INTERNAL EVENT: Logical clock: 90
+2025-03-03 14:55:25,688 - SENT: Message to VM 0 at logical time 91
+2025-03-03 14:55:25,688 - SENT: Message to VM 2 at logical time 91
+2025-03-03 14:55:25,689 - RECEIVED: Message from VM 0 with logical time 91 | Added to queue (now size: 1)
+2025-03-03 14:55:25,939 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 92
+2025-03-03 14:55:26,190 - SENT: Message to VM 2 at logical time 93
+2025-03-03 14:55:26,441 - INTERNAL EVENT: Logical clock: 94
+2025-03-03 14:55:26,692 - INTERNAL EVENT: Logical clock: 95
+2025-03-03 14:55:26,692 - RECEIVED: Message from VM 0 with logical time 95 | Added to queue (now size: 1)
+2025-03-03 14:55:26,943 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 96
+2025-03-03 14:55:27,195 - SENT: Message to VM 0 at logical time 97
+2025-03-03 14:55:27,195 - RECEIVED: Message from VM 0 with logical time 97 | Added to queue (now size: 1)
+2025-03-03 14:55:27,446 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 98
+2025-03-03 14:55:27,697 - SENT: Message to VM 0 at logical time 99
+2025-03-03 14:55:27,698 - RECEIVED: Message from VM 0 with logical time 99 | Added to queue (now size: 1)
+2025-03-03 14:55:27,948 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 100
+2025-03-03 14:55:28,200 - SENT: Message to VM 0 at logical time 101
+2025-03-03 14:55:28,200 - SENT: Message to VM 2 at logical time 101
+2025-03-03 14:55:28,451 - INTERNAL EVENT: Logical clock: 102
+2025-03-03 14:55:28,702 - INTERNAL EVENT: Logical clock: 103
+2025-03-03 14:55:28,952 - SENT: Message to VM 0 at logical time 104
+2025-03-03 14:55:29,203 - SENT: Message to VM 0 at logical time 105
+2025-03-03 14:55:29,203 - SENT: Message to VM 2 at logical time 105
+2025-03-03 14:55:29,454 - SENT: Message to VM 0 at logical time 106
+2025-03-03 14:55:29,454 - SENT: Message to VM 2 at logical time 106
+2025-03-03 14:55:29,705 - SENT: Message to VM 0 at logical time 107
+2025-03-03 14:55:29,705 - SENT: Message to VM 2 at logical time 107
+2025-03-03 14:55:29,956 - SENT: Message to VM 2 at logical time 108
+2025-03-03 14:55:30,207 - SENT: Message to VM 0 at logical time 109
+2025-03-03 14:55:30,207 - RECEIVED: Message from VM 0 with logical time 109 | Added to queue (now size: 1)
+2025-03-03 14:55:30,458 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 110
+2025-03-03 14:55:30,709 - INTERNAL EVENT: Logical clock: 111
+2025-03-03 14:55:30,710 - RECEIVED: Message from VM 0 with logical time 111 | Added to queue (now size: 1)
+2025-03-03 14:55:30,960 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 112
+2025-03-03 14:55:31,211 - SENT: Message to VM 0 at logical time 113
+2025-03-03 14:55:31,211 - RECEIVED: Message from VM 0 with logical time 113 | Added to queue (now size: 1)
+2025-03-03 14:55:31,447 - RECEIVED: Message from VM 2 with logical time 113 | Added to queue (now size: 2)
+2025-03-03 14:55:31,462 - PROCESSED: Message from VM 0 | Remaining queue size: 1 | Updated logical clock: 114
+2025-03-03 14:55:31,714 - PROCESSED: Message from VM 2 | Remaining queue size: 0 | Updated logical clock: 115
+2025-03-03 14:55:31,715 - RECEIVED: Message from VM 0 with logical time 115 | Added to queue (now size: 1)
+2025-03-03 14:55:31,782 - RECEIVED: Message from VM 2 with logical time 114 | Added to queue (now size: 2)
+2025-03-03 14:55:31,965 - PROCESSED: Message from VM 0 | Remaining queue size: 1 | Updated logical clock: 116
+2025-03-03 14:55:32,116 - RECEIVED: Message from VM 2 with logical time 115 | Added to queue (now size: 2)
+2025-03-03 14:55:32,217 - PROCESSED: Message from VM 2 | Remaining queue size: 1 | Updated logical clock: 117
+2025-03-03 14:55:32,451 - RECEIVED: Message from VM 2 with logical time 116 | Added to queue (now size: 2)
+2025-03-03 14:55:32,468 - PROCESSED: Message from VM 2 | Remaining queue size: 1 | Updated logical clock: 118
+2025-03-03 14:55:32,468 - RECEIVED: Message from VM 0 with logical time 118 | Added to queue (now size: 2)
+2025-03-03 14:55:32,719 - PROCESSED: Message from VM 2 | Remaining queue size: 1 | Updated logical clock: 119
+2025-03-03 14:55:32,719 - RECEIVED: Message from VM 0 with logical time 119 | Added to queue (now size: 2)
+2025-03-03 14:55:32,785 - RECEIVED: Message from VM 2 with logical time 117 | Added to queue (now size: 3)
+2025-03-03 14:55:32,970 - PROCESSED: Message from VM 0 | Remaining queue size: 2 | Updated logical clock: 120
+2025-03-03 14:55:33,120 - RECEIVED: Message from VM 2 with logical time 118 | Added to queue (now size: 3)
+2025-03-03 14:55:33,222 - PROCESSED: Message from VM 0 | Remaining queue size: 2 | Updated logical clock: 121
+2025-03-03 14:55:33,473 - PROCESSED: Message from VM 2 | Remaining queue size: 1 | Updated logical clock: 122
+2025-03-03 14:55:33,724 - PROCESSED: Message from VM 2 | Remaining queue size: 0 | Updated logical clock: 123
+2025-03-03 14:55:33,724 - RECEIVED: Message from VM 0 with logical time 123 | Added to queue (now size: 1)
+2025-03-03 14:55:33,975 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 124
+2025-03-03 14:55:33,976 - RECEIVED: Message from VM 0 with logical time 124 | Added to queue (now size: 1)
+2025-03-03 14:55:34,124 - RECEIVED: Message from VM 2 with logical time 125 | Added to queue (now size: 2)
+2025-03-03 14:55:34,227 - PROCESSED: Message from VM 0 | Remaining queue size: 1 | Updated logical clock: 125
+2025-03-03 14:55:34,478 - PROCESSED: Message from VM 2 | Remaining queue size: 0 | Updated logical clock: 126
+2025-03-03 14:55:34,478 - RECEIVED: Message from VM 0 with logical time 127 | Added to queue (now size: 1)
+2025-03-03 14:55:34,729 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 128
+2025-03-03 14:55:34,729 - RECEIVED: Message from VM 0 with logical time 128 | Added to queue (now size: 1)
+2025-03-03 14:55:34,793 - RECEIVED: Message from VM 2 with logical time 127 | Added to queue (now size: 2)
+2025-03-03 14:55:34,980 - PROCESSED: Message from VM 0 | Remaining queue size: 1 | Updated logical clock: 129
+2025-03-03 14:55:35,127 - RECEIVED: Message from VM 2 with logical time 128 | Added to queue (now size: 2)
+2025-03-03 14:55:35,231 - PROCESSED: Message from VM 2 | Remaining queue size: 1 | Updated logical clock: 130
+2025-03-03 14:55:35,482 - PROCESSED: Message from VM 2 | Remaining queue size: 0 | Updated logical clock: 131
+2025-03-03 14:55:35,482 - RECEIVED: Message from VM 0 with logical time 131 | Added to queue (now size: 1)
+2025-03-03 14:55:35,733 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 132
+2025-03-03 14:55:35,984 - INTERNAL EVENT: Logical clock: 133
+2025-03-03 14:55:36,235 - SENT: Message to VM 2 at logical time 134
+2025-03-03 14:55:36,235 - RECEIVED: Message from VM 0 with logical time 134 | Added to queue (now size: 1)
+2025-03-03 14:55:36,487 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 135
+2025-03-03 14:55:36,487 - RECEIVED: Message from VM 0 with logical time 135 | Added to queue (now size: 1)
+2025-03-03 14:55:36,738 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 136
+2025-03-03 14:55:36,738 - RECEIVED: Message from VM 0 with logical time 136 | Added to queue (now size: 1)
+2025-03-03 14:55:36,989 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 137
+2025-03-03 14:55:37,241 - SENT: Message to VM 0 at logical time 138
+2025-03-03 14:55:37,241 - SENT: Message to VM 2 at logical time 138
+2025-03-03 14:55:37,241 - RECEIVED: Message from VM 0 with logical time 138 | Added to queue (now size: 1)
+2025-03-03 14:55:37,492 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 139
+2025-03-03 14:55:37,743 - SENT: Message to VM 0 at logical time 140
+2025-03-03 14:55:37,994 - SENT: Message to VM 2 at logical time 141
+2025-03-03 14:55:38,245 - SENT: Message to VM 0 at logical time 142
+2025-03-03 14:55:38,245 - SENT: Message to VM 2 at logical time 142
+2025-03-03 14:55:38,245 - RECEIVED: Message from VM 0 with logical time 142 | Added to queue (now size: 1)
+2025-03-03 14:55:38,496 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 143
+2025-03-03 14:55:38,747 - SENT: Message to VM 0 at logical time 144
+2025-03-03 14:55:38,748 - SENT: Message to VM 2 at logical time 144
+2025-03-03 14:55:38,748 - RECEIVED: Message from VM 0 with logical time 144 | Added to queue (now size: 1)
+2025-03-03 14:55:38,999 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 145
+2025-03-03 14:55:39,251 - SENT: Message to VM 0 at logical time 146
+2025-03-03 14:55:39,251 - SENT: Message to VM 2 at logical time 146
+2025-03-03 14:55:39,251 - RECEIVED: Message from VM 0 with logical time 146 | Added to queue (now size: 1)
+2025-03-03 14:55:39,502 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 147
+2025-03-03 14:55:39,753 - SENT: Message to VM 0 at logical time 148
+2025-03-03 14:55:39,753 - SENT: Message to VM 2 at logical time 148
+2025-03-03 14:55:39,753 - RECEIVED: Message from VM 0 with logical time 148 | Added to queue (now size: 1)
+2025-03-03 14:55:40,004 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 149
+2025-03-03 14:55:40,254 - SENT: Message to VM 2 at logical time 150
+2025-03-03 14:55:40,505 - SENT: Message to VM 0 at logical time 151
+2025-03-03 14:55:40,506 - RECEIVED: Message from VM 0 with logical time 151 | Added to queue (now size: 1)
+2025-03-03 14:55:40,757 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 152
+2025-03-03 14:55:41,007 - SENT: Message to VM 2 at logical time 153
+2025-03-03 14:55:41,007 - RECEIVED: Message from VM 0 with logical time 153 | Added to queue (now size: 1)
+2025-03-03 14:55:41,258 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 154
+2025-03-03 14:55:41,258 - RECEIVED: Message from VM 0 with logical time 154 | Added to queue (now size: 1)
+2025-03-03 14:55:41,510 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 155
+2025-03-03 14:55:41,761 - SENT: Message to VM 0 at logical time 156
+2025-03-03 14:55:41,761 - SENT: Message to VM 2 at logical time 156
+2025-03-03 14:55:42,012 - INTERNAL EVENT: Logical clock: 157
+2025-03-03 14:55:42,262 - INTERNAL EVENT: Logical clock: 158
+2025-03-03 14:55:42,262 - RECEIVED: Message from VM 0 with logical time 158 | Added to queue (now size: 1)
+2025-03-03 14:55:42,514 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 159
+2025-03-03 14:55:42,514 - RECEIVED: Message from VM 0 with logical time 159 | Added to queue (now size: 1)
+2025-03-03 14:55:42,765 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 160
+2025-03-03 14:55:42,765 - RECEIVED: Message from VM 0 with logical time 160 | Added to queue (now size: 1)
+2025-03-03 14:55:43,016 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 161
+2025-03-03 14:55:43,016 - RECEIVED: Message from VM 0 with logical time 161 | Added to queue (now size: 1)
+2025-03-03 14:55:43,266 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 162
+2025-03-03 14:55:43,266 - RECEIVED: Message from VM 0 with logical time 162 | Added to queue (now size: 1)
+2025-03-03 14:55:43,518 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 163
+2025-03-03 14:55:43,769 - INTERNAL EVENT: Logical clock: 164
+2025-03-03 14:55:44,020 - SENT: Message to VM 2 at logical time 165
+2025-03-03 14:55:44,020 - RECEIVED: Message from VM 0 with logical time 165 | Added to queue (now size: 1)
+2025-03-03 14:55:44,271 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 166
+2025-03-03 14:55:44,491 - RECEIVED: Message from VM 2 with logical time 167 | Added to queue (now size: 1)
+2025-03-03 14:55:44,522 - PROCESSED: Message from VM 2 | Remaining queue size: 0 | Updated logical clock: 168
+2025-03-03 14:55:44,774 - SENT: Message to VM 0 at logical time 169
+2025-03-03 14:55:44,774 - SENT: Message to VM 2 at logical time 169
+2025-03-03 14:55:44,774 - RECEIVED: Message from VM 0 with logical time 169 | Added to queue (now size: 1)
+2025-03-03 14:55:45,025 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 170
+2025-03-03 14:55:45,277 - INTERNAL EVENT: Logical clock: 171
+2025-03-03 14:55:45,277 - RECEIVED: Message from VM 0 with logical time 171 | Added to queue (now size: 1)
+2025-03-03 14:55:45,528 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 172
+2025-03-03 14:55:45,779 - SENT: Message to VM 0 at logical time 173
+2025-03-03 14:55:45,779 - RECEIVED: Message from VM 0 with logical time 173 | Added to queue (now size: 1)
+2025-03-03 14:55:46,030 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 174
+2025-03-03 14:55:46,281 - INTERNAL EVENT: Logical clock: 175
+2025-03-03 14:55:46,532 - SENT: Message to VM 0 at logical time 176
+2025-03-03 14:55:46,784 - SENT: Message to VM 0 at logical time 177
+2025-03-03 14:55:46,784 - SENT: Message to VM 2 at logical time 177
+2025-03-03 14:55:47,035 - SENT: Message to VM 0 at logical time 178
+2025-03-03 14:55:47,168 - RECEIVED: Message from VM 2 with logical time 179 | Added to queue (now size: 1)
+2025-03-03 14:55:47,286 - PROCESSED: Message from VM 2 | Remaining queue size: 0 | Updated logical clock: 180
+2025-03-03 14:55:47,539 - SENT: Message to VM 0 at logical time 181
+2025-03-03 14:55:47,539 - SENT: Message to VM 2 at logical time 181
+2025-03-03 14:55:47,789 - SENT: Message to VM 2 at logical time 182
+2025-03-03 14:55:48,039 - INTERNAL EVENT: Logical clock: 183
+2025-03-03 14:55:48,290 - SENT: Message to VM 0 at logical time 184
+2025-03-03 14:55:48,290 - SENT: Message to VM 2 at logical time 184
+2025-03-03 14:55:48,542 - INTERNAL EVENT: Logical clock: 185
+2025-03-03 14:55:48,793 - INTERNAL EVENT: Logical clock: 186
+2025-03-03 14:55:48,793 - RECEIVED: Message from VM 0 with logical time 186 | Added to queue (now size: 1)
+2025-03-03 14:55:49,044 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 187
+2025-03-03 14:55:49,295 - SENT: Message to VM 0 at logical time 188
+2025-03-03 14:55:49,296 - SENT: Message to VM 2 at logical time 188
+2025-03-03 14:55:49,296 - RECEIVED: Message from VM 0 with logical time 188 | Added to queue (now size: 1)
+2025-03-03 14:55:49,547 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 189
+2025-03-03 14:55:49,798 - INTERNAL EVENT: Logical clock: 190
+2025-03-03 14:55:50,051 - SENT: Message to VM 0 at logical time 191
+2025-03-03 14:55:50,052 - SENT: Message to VM 2 at logical time 191
+2025-03-03 14:55:50,056 - RECEIVED: Message from VM 0 with logical time 191 | Added to queue (now size: 1)
+2025-03-03 14:55:50,302 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 192
+2025-03-03 14:55:50,554 - SENT: Message to VM 0 at logical time 193
+2025-03-03 14:55:50,554 - SENT: Message to VM 2 at logical time 193
+2025-03-03 14:55:50,554 - RECEIVED: Message from VM 0 with logical time 193 | Added to queue (now size: 1)
+2025-03-03 14:55:50,805 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 194
+2025-03-03 14:55:51,056 - SENT: Message to VM 0 at logical time 195
+2025-03-03 14:55:51,058 - RECEIVED: Message from VM 0 with logical time 195 | Added to queue (now size: 1)
+2025-03-03 14:55:51,307 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 196
+2025-03-03 14:55:51,512 - RECEIVED: Message from VM 2 with logical time 195 | Added to queue (now size: 1)
+2025-03-03 14:55:51,558 - PROCESSED: Message from VM 2 | Remaining queue size: 0 | Updated logical clock: 197
+2025-03-03 14:55:51,810 - SENT: Message to VM 0 at logical time 198
+2025-03-03 14:55:52,061 - SENT: Message to VM 2 at logical time 199
+2025-03-03 14:55:52,312 - SENT: Message to VM 2 at logical time 200
+2025-03-03 14:55:52,564 - SENT: Message to VM 2 at logical time 201
+2025-03-03 14:55:52,814 - INTERNAL EVENT: Logical clock: 202
+2025-03-03 14:55:52,815 - RECEIVED: Message from VM 0 with logical time 202 | Added to queue (now size: 1)
+2025-03-03 14:55:53,066 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 203
+2025-03-03 14:55:53,066 - RECEIVED: Message from VM 0 with logical time 203 | Added to queue (now size: 1)
+2025-03-03 14:55:53,317 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 204
+2025-03-03 14:55:53,568 - INTERNAL EVENT: Logical clock: 205
+2025-03-03 14:55:53,568 - RECEIVED: Message from VM 0 with logical time 205 | Added to queue (now size: 1)
+2025-03-03 14:55:53,819 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 206
+2025-03-03 14:55:54,070 - INTERNAL EVENT: Logical clock: 207
+2025-03-03 14:55:54,322 - INTERNAL EVENT: Logical clock: 208
+2025-03-03 14:55:54,522 - RECEIVED: Message from VM 2 with logical time 208 | Added to queue (now size: 1)
+2025-03-03 14:55:54,573 - PROCESSED: Message from VM 2 | Remaining queue size: 0 | Updated logical clock: 209
+2025-03-03 14:55:54,824 - SENT: Message to VM 0 at logical time 210
+2025-03-03 14:55:55,075 - INTERNAL EVENT: Logical clock: 211
+2025-03-03 14:55:55,191 - RECEIVED: Message from VM 2 with logical time 212 | Added to queue (now size: 1)
+2025-03-03 14:55:55,326 - PROCESSED: Message from VM 2 | Remaining queue size: 0 | Updated logical clock: 213
+2025-03-03 14:55:55,578 - SENT: Message to VM 0 at logical time 214
+2025-03-03 14:55:55,578 - SENT: Message to VM 2 at logical time 214
+2025-03-03 14:55:55,578 - RECEIVED: Message from VM 0 with logical time 213 | Added to queue (now size: 1)
+2025-03-03 14:55:55,829 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 215
+2025-03-03 14:55:56,080 - INTERNAL EVENT: Logical clock: 216
+2025-03-03 14:55:56,332 - INTERNAL EVENT: Logical clock: 217
+2025-03-03 14:55:56,332 - RECEIVED: Message from VM 0 with logical time 217 | Added to queue (now size: 1)
+2025-03-03 14:55:56,583 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 218
+2025-03-03 14:55:56,583 - RECEIVED: Message from VM 0 with logical time 218 | Added to queue (now size: 1)
+2025-03-03 14:55:56,834 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 219
+2025-03-03 14:55:57,085 - INTERNAL EVENT: Logical clock: 220
+2025-03-03 14:55:57,085 - RECEIVED: Message from VM 0 with logical time 220 | Added to queue (now size: 1)
+2025-03-03 14:55:57,336 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 221
+2025-03-03 14:55:57,588 - INTERNAL EVENT: Logical clock: 222
+2025-03-03 14:55:57,588 - RECEIVED: Message from VM 0 with logical time 222 | Added to queue (now size: 1)
+2025-03-03 14:55:57,839 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 223
+2025-03-03 14:55:58,089 - RECEIVED: Message from VM 0 with logical time 224 | Added to queue (now size: 1)
+2025-03-03 14:55:58,090 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 225
+2025-03-03 14:55:58,341 - INTERNAL EVENT: Logical clock: 226
+2025-03-03 14:55:58,591 - SENT: Message to VM 2 at logical time 227
+2025-03-03 14:55:58,843 - SENT: Message to VM 0 at logical time 228
+2025-03-03 14:55:58,843 - SENT: Message to VM 2 at logical time 228
+2025-03-03 14:55:58,843 - RECEIVED: Message from VM 0 with logical time 227 | Added to queue (now size: 1)
+2025-03-03 14:55:59,094 - PROCESSED: Message from VM 0 | Remaining queue size: 0 | Updated logical clock: 229
+2025-03-03 14:55:59,344 - SENT: Message to VM 0 at logical time 230
+2025-03-03 14:55:59,595 - SENT: Message to VM 0 at logical time 231
+2025-03-03 14:55:59,595 - SENT: Message to VM 2 at logical time 231
+2025-03-03 14:55:59,847 - SENT: Message to VM 2 at logical time 232
+2025-03-03 14:56:00,098 - SENT: Message to VM 0 at logical time 233
+2025-03-03 14:56:00,098 - SENT: Message to VM 2 at logical time 233
+2025-03-03 14:56:00,349 - SENT: Message to VM 0 at logical time 234
+2025-03-03 14:56:00,349 - SENT: Message to VM 2 at logical time 234
+2025-03-03 14:56:00,600 - SENT: Message to VM 2 at logical time 235
+2025-03-03 14:56:00,851 - SENT: Message to VM 0 at logical time 236
+2025-03-03 14:56:00,852 - SENT: Message to VM 2 at logical time 236
+2025-03-03 14:56:01,102 - SENT: Message to VM 0 at logical time 237
+2025-03-03 14:56:01,353 - SENT: Message to VM 0 at logical time 238
+2025-03-03 14:56:01,604 - SENT: Message to VM 0 at logical time 239
+2025-03-03 14:56:01,604 - SENT: Message to VM 2 at logical time 239
+2025-03-03 14:56:01,855 - SENT: Message to VM 2 at logical time 240
+2025-03-03 14:56:02,106 - SENT: Message to VM 0 at logical time 241

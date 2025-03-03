@@ -9,7 +9,15 @@ import time
 from datetime import datetime
 from typing import List, Dict, Optional
 
-from config import *
+import sys
+
+# Get the dynamically loaded config module
+config = sys.modules['config']
+
+# Import all config variables
+for var in dir(config):
+    if not var.startswith('__'):
+        globals()[var] = getattr(config, var)
 
 class VirtualMachine:
     def __init__(self, machine_id: int, total_machines: int):

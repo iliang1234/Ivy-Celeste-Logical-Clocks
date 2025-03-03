@@ -3,8 +3,18 @@
 import asyncio
 import logging
 import os
+import importlib.util
+import sys
+
+# Determine which config to use
+config_path = os.environ.get('CONFIG_PATH', 'config.py')
+spec = importlib.util.spec_from_file_location('config', config_path)
+config = importlib.util.module_from_spec(spec)
+sys.modules['config'] = config
+spec.loader.exec_module(config)
+
 from virtual_machine import VirtualMachine
-from config import LOG_DIR
+LOG_DIR = config.LOG_DIR
 
 async def main():
     # Create log directory if it doesn't exist

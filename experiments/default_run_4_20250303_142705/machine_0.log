@@ -1,0 +1,147 @@
+2025-03-03 14:27:05,459 - Initialized VM 0 with clock rate 1 ticks/second
+2025-03-03 14:27:05,459 - Server started on 127.0.0.1:5000
+2025-03-03 14:27:06,462 - Connected to VM 1
+2025-03-03 14:27:06,463 - Connected to VM 2
+2025-03-03 14:27:06,631 - RECEIVED: Message from VM 1 with logical time 1 | Added to queue (now size: 1)
+2025-03-03 14:27:06,798 - RECEIVED: Message from VM 1 with logical time 2 | Added to queue (now size: 2)
+2025-03-03 14:27:06,965 - RECEIVED: Message from VM 1 with logical time 3 | Added to queue (now size: 3)
+2025-03-03 14:27:07,132 - RECEIVED: Message from VM 1 with logical time 4 | Added to queue (now size: 4)
+2025-03-03 14:27:07,464 - PROCESSED: Message from VM 1 | Remaining queue size: 3 | Updated logical clock: 2
+2025-03-03 14:27:07,467 - RECEIVED: Message from VM 1 with logical time 6 | Added to queue (now size: 4)
+2025-03-03 14:27:07,635 - RECEIVED: Message from VM 1 with logical time 7 | Added to queue (now size: 5)
+2025-03-03 14:27:08,137 - RECEIVED: Message from VM 1 with logical time 10 | Added to queue (now size: 6)
+2025-03-03 14:27:08,305 - RECEIVED: Message from VM 1 with logical time 11 | Added to queue (now size: 7)
+2025-03-03 14:27:08,465 - PROCESSED: Message from VM 1 | Remaining queue size: 6 | Updated logical clock: 3
+2025-03-03 14:27:09,144 - RECEIVED: Message from VM 1 with logical time 16 | Added to queue (now size: 7)
+2025-03-03 14:27:09,466 - PROCESSED: Message from VM 1 | Remaining queue size: 6 | Updated logical clock: 4
+2025-03-03 14:27:09,480 - RECEIVED: Message from VM 1 with logical time 18 | Added to queue (now size: 7)
+2025-03-03 14:27:09,805 - RECEIVED: Message from VM 2 with logical time 15 | Added to queue (now size: 8)
+2025-03-03 14:27:09,983 - RECEIVED: Message from VM 1 with logical time 21 | Added to queue (now size: 9)
+2025-03-03 14:27:10,467 - PROCESSED: Message from VM 1 | Remaining queue size: 8 | Updated logical clock: 5
+2025-03-03 14:27:10,661 - RECEIVED: Message from VM 1 with logical time 25 | Added to queue (now size: 9)
+2025-03-03 14:27:10,829 - RECEIVED: Message from VM 1 with logical time 26 | Added to queue (now size: 10)
+2025-03-03 14:27:11,468 - PROCESSED: Message from VM 1 | Remaining queue size: 9 | Updated logical clock: 7
+2025-03-03 14:27:12,470 - PROCESSED: Message from VM 1 | Remaining queue size: 8 | Updated logical clock: 8
+2025-03-03 14:27:12,675 - RECEIVED: Message from VM 1 with logical time 37 | Added to queue (now size: 9)
+2025-03-03 14:27:13,346 - RECEIVED: Message from VM 1 with logical time 41 | Added to queue (now size: 10)
+2025-03-03 14:27:13,470 - PROCESSED: Message from VM 1 | Remaining queue size: 9 | Updated logical clock: 11
+2025-03-03 14:27:14,471 - PROCESSED: Message from VM 1 | Remaining queue size: 8 | Updated logical clock: 12
+2025-03-03 14:27:14,855 - RECEIVED: Message from VM 1 with logical time 50 | Added to queue (now size: 9)
+2025-03-03 14:27:15,359 - RECEIVED: Message from VM 1 with logical time 53 | Added to queue (now size: 10)
+2025-03-03 14:27:15,472 - PROCESSED: Message from VM 1 | Remaining queue size: 9 | Updated logical clock: 17
+2025-03-03 14:27:15,695 - RECEIVED: Message from VM 1 with logical time 55 | Added to queue (now size: 10)
+2025-03-03 14:27:15,863 - RECEIVED: Message from VM 1 with logical time 56 | Added to queue (now size: 11)
+2025-03-03 14:27:16,473 - PROCESSED: Message from VM 1 | Remaining queue size: 10 | Updated logical clock: 19
+2025-03-03 14:27:17,037 - RECEIVED: Message from VM 1 with logical time 63 | Added to queue (now size: 11)
+2025-03-03 14:27:17,204 - RECEIVED: Message from VM 1 with logical time 64 | Added to queue (now size: 12)
+2025-03-03 14:27:17,474 - PROCESSED: Message from VM 2 | Remaining queue size: 11 | Updated logical clock: 20
+2025-03-03 14:27:17,708 - RECEIVED: Message from VM 1 with logical time 67 | Added to queue (now size: 12)
+2025-03-03 14:27:18,164 - RECEIVED: Message from VM 2 with logical time 67 | Added to queue (now size: 13)
+2025-03-03 14:27:18,476 - PROCESSED: Message from VM 1 | Remaining queue size: 12 | Updated logical clock: 22
+2025-03-03 14:27:18,833 - RECEIVED: Message from VM 2 with logical time 69 | Added to queue (now size: 13)
+2025-03-03 14:27:19,385 - RECEIVED: Message from VM 1 with logical time 77 | Added to queue (now size: 14)
+2025-03-03 14:27:19,476 - PROCESSED: Message from VM 1 | Remaining queue size: 13 | Updated logical clock: 26
+2025-03-03 14:27:20,171 - RECEIVED: Message from VM 2 with logical time 79 | Added to queue (now size: 14)
+2025-03-03 14:27:20,477 - PROCESSED: Message from VM 1 | Remaining queue size: 13 | Updated logical clock: 27
+2025-03-03 14:27:20,505 - RECEIVED: Message from VM 2 with logical time 80 | Added to queue (now size: 14)
+2025-03-03 14:27:21,479 - PROCESSED: Message from VM 1 | Remaining queue size: 13 | Updated logical clock: 38
+2025-03-03 14:27:21,734 - RECEIVED: Message from VM 1 with logical time 91 | Added to queue (now size: 14)
+2025-03-03 14:27:22,480 - PROCESSED: Message from VM 1 | Remaining queue size: 13 | Updated logical clock: 42
+2025-03-03 14:27:22,574 - RECEIVED: Message from VM 1 with logical time 96 | Added to queue (now size: 14)
+2025-03-03 14:27:23,481 - PROCESSED: Message from VM 1 | Remaining queue size: 13 | Updated logical clock: 51
+2025-03-03 14:27:23,580 - RECEIVED: Message from VM 1 with logical time 102 | Added to queue (now size: 14)
+2025-03-03 14:27:24,482 - PROCESSED: Message from VM 1 | Remaining queue size: 13 | Updated logical clock: 54
+2025-03-03 14:27:25,484 - PROCESSED: Message from VM 1 | Remaining queue size: 12 | Updated logical clock: 56
+2025-03-03 14:27:26,263 - RECEIVED: Message from VM 1 with logical time 118 | Added to queue (now size: 13)
+2025-03-03 14:27:26,484 - PROCESSED: Message from VM 1 | Remaining queue size: 12 | Updated logical clock: 57
+2025-03-03 14:27:27,438 - RECEIVED: Message from VM 1 with logical time 125 | Added to queue (now size: 13)
+2025-03-03 14:27:27,485 - PROCESSED: Message from VM 1 | Remaining queue size: 12 | Updated logical clock: 64
+2025-03-03 14:27:27,527 - RECEIVED: Message from VM 2 with logical time 124 | Added to queue (now size: 13)
+2025-03-03 14:27:28,486 - PROCESSED: Message from VM 1 | Remaining queue size: 12 | Updated logical clock: 65
+2025-03-03 14:27:28,865 - RECEIVED: Message from VM 2 with logical time 132 | Added to queue (now size: 13)
+2025-03-03 14:27:29,199 - RECEIVED: Message from VM 2 with logical time 133 | Added to queue (now size: 14)
+2025-03-03 14:27:29,284 - RECEIVED: Message from VM 1 with logical time 136 | Added to queue (now size: 15)
+2025-03-03 14:27:29,487 - PROCESSED: Message from VM 1 | Remaining queue size: 14 | Updated logical clock: 68
+2025-03-03 14:27:30,203 - RECEIVED: Message from VM 2 with logical time 141 | Added to queue (now size: 15)
+2025-03-03 14:27:30,488 - PROCESSED: Message from VM 2 | Remaining queue size: 14 | Updated logical clock: 69
+2025-03-03 14:27:31,489 - PROCESSED: Message from VM 2 | Remaining queue size: 13 | Updated logical clock: 70
+2025-03-03 14:27:31,634 - RECEIVED: Message from VM 1 with logical time 150 | Added to queue (now size: 14)
+2025-03-03 14:27:32,490 - PROCESSED: Message from VM 1 | Remaining queue size: 13 | Updated logical clock: 78
+2025-03-03 14:27:33,212 - RECEIVED: Message from VM 2 with logical time 155 | Added to queue (now size: 14)
+2025-03-03 14:27:33,478 - RECEIVED: Message from VM 1 with logical time 161 | Added to queue (now size: 15)
+2025-03-03 14:27:33,491 - PROCESSED: Message from VM 2 | Remaining queue size: 14 | Updated logical clock: 80
+2025-03-03 14:27:33,547 - RECEIVED: Message from VM 2 with logical time 156 | Added to queue (now size: 15)
+2025-03-03 14:27:33,982 - RECEIVED: Message from VM 1 with logical time 164 | Added to queue (now size: 16)
+2025-03-03 14:27:34,318 - RECEIVED: Message from VM 1 with logical time 166 | Added to queue (now size: 17)
+2025-03-03 14:27:34,492 - PROCESSED: Message from VM 2 | Remaining queue size: 16 | Updated logical clock: 81
+2025-03-03 14:27:34,885 - RECEIVED: Message from VM 2 with logical time 168 | Added to queue (now size: 17)
+2025-03-03 14:27:35,492 - PROCESSED: Message from VM 1 | Remaining queue size: 16 | Updated logical clock: 92
+2025-03-03 14:27:35,659 - RECEIVED: Message from VM 1 with logical time 174 | Added to queue (now size: 17)
+2025-03-03 14:27:36,223 - RECEIVED: Message from VM 2 with logical time 176 | Added to queue (now size: 18)
+2025-03-03 14:27:36,493 - PROCESSED: Message from VM 1 | Remaining queue size: 17 | Updated logical clock: 97
+2025-03-03 14:27:36,665 - RECEIVED: Message from VM 1 with logical time 180 | Added to queue (now size: 18)
+2025-03-03 14:27:36,833 - RECEIVED: Message from VM 1 with logical time 181 | Added to queue (now size: 19)
+2025-03-03 14:27:37,168 - RECEIVED: Message from VM 1 with logical time 183 | Added to queue (now size: 20)
+2025-03-03 14:27:37,494 - PROCESSED: Message from VM 1 | Remaining queue size: 19 | Updated logical clock: 103
+2025-03-03 14:27:38,495 - PROCESSED: Message from VM 1 | Remaining queue size: 18 | Updated logical clock: 119
+2025-03-03 14:27:38,679 - RECEIVED: Message from VM 1 with logical time 192 | Added to queue (now size: 19)
+2025-03-03 14:27:39,496 - PROCESSED: Message from VM 1 | Remaining queue size: 18 | Updated logical clock: 126
+2025-03-03 14:27:39,518 - RECEIVED: Message from VM 1 with logical time 197 | Added to queue (now size: 19)
+2025-03-03 14:27:40,021 - RECEIVED: Message from VM 1 with logical time 200 | Added to queue (now size: 20)
+2025-03-03 14:27:40,498 - PROCESSED: Message from VM 2 | Remaining queue size: 19 | Updated logical clock: 127
+2025-03-03 14:27:40,572 - RECEIVED: Message from VM 2 with logical time 202 | Added to queue (now size: 20)
+2025-03-03 14:27:40,861 - RECEIVED: Message from VM 1 with logical time 205 | Added to queue (now size: 21)
+2025-03-03 14:27:41,499 - PROCESSED: Message from VM 2 | Remaining queue size: 20 | Updated logical clock: 133
+2025-03-03 14:27:41,578 - RECEIVED: Message from VM 2 with logical time 209 | Added to queue (now size: 21)
+2025-03-03 14:27:42,202 - RECEIVED: Message from VM 1 with logical time 213 | Added to queue (now size: 22)
+2025-03-03 14:27:42,500 - PROCESSED: Message from VM 2 | Remaining queue size: 21 | Updated logical clock: 134
+2025-03-03 14:27:42,537 - RECEIVED: Message from VM 1 with logical time 215 | Added to queue (now size: 22)
+2025-03-03 14:27:42,582 - RECEIVED: Message from VM 2 with logical time 212 | Added to queue (now size: 23)
+2025-03-03 14:27:43,251 - RECEIVED: Message from VM 2 with logical time 214 | Added to queue (now size: 24)
+2025-03-03 14:27:43,501 - PROCESSED: Message from VM 1 | Remaining queue size: 23 | Updated logical clock: 137
+2025-03-03 14:27:43,585 - RECEIVED: Message from VM 2 with logical time 215 | Added to queue (now size: 24)
+2025-03-03 14:27:44,502 - PROCESSED: Message from VM 2 | Remaining queue size: 23 | Updated logical clock: 142
+2025-03-03 14:27:45,053 - RECEIVED: Message from VM 1 with logical time 230 | Added to queue (now size: 24)
+2025-03-03 14:27:45,504 - PROCESSED: Message from VM 1 | Remaining queue size: 23 | Updated logical clock: 151
+2025-03-03 14:27:45,557 - RECEIVED: Message from VM 1 with logical time 233 | Added to queue (now size: 24)
+2025-03-03 14:27:45,892 - RECEIVED: Message from VM 1 with logical time 235 | Added to queue (now size: 25)
+2025-03-03 14:27:46,505 - PROCESSED: Message from VM 2 | Remaining queue size: 24 | Updated logical clock: 156
+2025-03-03 14:27:46,731 - RECEIVED: Message from VM 1 with logical time 240 | Added to queue (now size: 25)
+2025-03-03 14:27:47,066 - RECEIVED: Message from VM 1 with logical time 242 | Added to queue (now size: 26)
+2025-03-03 14:27:47,506 - PROCESSED: Message from VM 1 | Remaining queue size: 25 | Updated logical clock: 162
+2025-03-03 14:27:47,905 - RECEIVED: Message from VM 1 with logical time 247 | Added to queue (now size: 26)
+2025-03-03 14:27:48,507 - PROCESSED: Message from VM 2 | Remaining queue size: 25 | Updated logical clock: 163
+2025-03-03 14:27:49,080 - RECEIVED: Message from VM 1 with logical time 254 | Added to queue (now size: 26)
+2025-03-03 14:27:49,508 - PROCESSED: Message from VM 1 | Remaining queue size: 25 | Updated logical clock: 165
+2025-03-03 14:27:49,937 - RECEIVED: Message from VM 2 with logical time 259 | Added to queue (now size: 26)
+2025-03-03 14:27:50,085 - RECEIVED: Message from VM 1 with logical time 260 | Added to queue (now size: 27)
+2025-03-03 14:27:50,253 - RECEIVED: Message from VM 1 with logical time 261 | Added to queue (now size: 28)
+2025-03-03 14:27:50,421 - RECEIVED: Message from VM 1 with logical time 262 | Added to queue (now size: 29)
+2025-03-03 14:27:50,509 - PROCESSED: Message from VM 1 | Remaining queue size: 28 | Updated logical clock: 167
+2025-03-03 14:27:51,511 - PROCESSED: Message from VM 2 | Remaining queue size: 27 | Updated logical clock: 169
+2025-03-03 14:27:52,278 - RECEIVED: Message from VM 2 with logical time 273 | Added to queue (now size: 28)
+2025-03-03 14:27:52,512 - PROCESSED: Message from VM 1 | Remaining queue size: 27 | Updated logical clock: 175
+2025-03-03 14:27:53,513 - PROCESSED: Message from VM 2 | Remaining queue size: 26 | Updated logical clock: 177
+2025-03-03 14:27:54,514 - PROCESSED: Message from VM 1 | Remaining queue size: 25 | Updated logical clock: 181
+2025-03-03 14:27:55,284 - RECEIVED: Message from VM 1 with logical time 291 | Added to queue (now size: 26)
+2025-03-03 14:27:55,515 - PROCESSED: Message from VM 1 | Remaining queue size: 25 | Updated logical clock: 182
+2025-03-03 14:27:56,287 - RECEIVED: Message from VM 2 with logical time 294 | Added to queue (now size: 26)
+2025-03-03 14:27:56,516 - PROCESSED: Message from VM 1 | Remaining queue size: 25 | Updated logical clock: 184
+2025-03-03 14:27:56,622 - RECEIVED: Message from VM 1 with logical time 299 | Added to queue (now size: 26)
+2025-03-03 14:27:57,518 - PROCESSED: Message from VM 1 | Remaining queue size: 25 | Updated logical clock: 193
+2025-03-03 14:27:57,626 - RECEIVED: Message from VM 2 with logical time 298 | Added to queue (now size: 26)
+2025-03-03 14:27:57,961 - RECEIVED: Message from VM 1 with logical time 307 | Added to queue (now size: 27)
+2025-03-03 14:27:58,296 - RECEIVED: Message from VM 1 with logical time 309 | Added to queue (now size: 28)
+2025-03-03 14:27:58,527 - PROCESSED: Message from VM 1 | Remaining queue size: 27 | Updated logical clock: 198
+2025-03-03 14:27:58,630 - RECEIVED: Message from VM 1 with logical time 311 | Added to queue (now size: 28)
+2025-03-03 14:27:59,528 - PROCESSED: Message from VM 1 | Remaining queue size: 27 | Updated logical clock: 201
+2025-03-03 14:27:59,633 - RECEIVED: Message from VM 1 with logical time 317 | Added to queue (now size: 28)
+2025-03-03 14:28:00,303 - RECEIVED: Message from VM 1 with logical time 321 | Added to queue (now size: 29)
+2025-03-03 14:28:00,529 - PROCESSED: Message from VM 2 | Remaining queue size: 28 | Updated logical clock: 203
+2025-03-03 14:28:01,531 - PROCESSED: Message from VM 1 | Remaining queue size: 27 | Updated logical clock: 206
+2025-03-03 14:28:01,810 - RECEIVED: Message from VM 1 with logical time 330 | Added to queue (now size: 28)
+2025-03-03 14:28:02,532 - PROCESSED: Message from VM 2 | Remaining queue size: 27 | Updated logical clock: 210
+2025-03-03 14:28:02,648 - RECEIVED: Message from VM 1 with logical time 335 | Added to queue (now size: 28)
+2025-03-03 14:28:03,533 - PROCESSED: Message from VM 1 | Remaining queue size: 27 | Updated logical clock: 214
+2025-03-03 14:28:04,494 - RECEIVED: Message from VM 1 with logical time 346 | Added to queue (now size: 28)
+2025-03-03 14:28:04,534 - PROCESSED: Message from VM 1 | Remaining queue size: 27 | Updated logical clock: 216

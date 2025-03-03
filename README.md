@@ -64,3 +64,83 @@ Actions constrained by clock rate:
 
 Actions not constrained by clock rate:
 - "RECEIVED" events (these happen whenever other VMs send messages)
+
+## Experiments
+Run `run_experiments.py` and specify the arguments accordingly:
+```bash
+python run_experiments.py --config \[default, modified\] --duration \[seconds\] --trials \[num_trials\]
+```
+
+Example:
+```bash
+python run_experiments.py --config default --duration 60 --trials 5
+```
+
+By default, the configuation is `default`, the duration is `60 seconds`, and the number of trials is `5`.
+
+Each experiment creates a new directory with the name of the experiment, trial number, and real life time stamp of when that experiment was ran. Inside the experiment directory are the VM log files, each with three machines. 
+
+### Modified configuations
+File `config_modified` contains the configuration for the modified experiment, with a smaller variation in the clock cycles and a smaller probability of the event being internal. More specifically:
+1. Clock rates are between 3 and 4 ticks/second (smaller variation)
+2. Event probabilities:
+   - 40% chance to send to one machine (numbers 1-4)
+   - 30% chance to send to all machines (numbers 5-7)
+   - 30% chance for internal event (numbers 8-10)
+
+This configuration will result in:
+- More consistent timing between machines (only 0.5 tick/second difference)
+- More communication between machines (70% of events are sends vs 30% internal)
+- More frequent broadcast messages (30% vs the original config's 10%)
+
+## Log Analysis
+
+The `analyze_logs.py` script provides comprehensive analysis of experiment results:
+
+### Features
+
+1. System Characteristics Analysis:
+   - Clock rates for each VM
+   - Message patterns (internal, point-to-point, broadcast, received)
+   - Time-based performance metrics
+
+2. Clock Behavior Analysis:
+   - Logical clock jumps (size and frequency)
+   - Clock drift between machines
+   - Time-based drift rates
+
+3. Queue Analysis:
+   - Queue lengths over time
+   - Queue growth rates
+   - Maximum and average queue sizes
+
+4. Message Pattern Analysis:
+   - Message type distribution
+   - Communication patterns
+   - Message processing rates
+
+### Usage
+
+Run the analysis script:
+```bash
+python analyze_logs.py --config \[default, modified\] --run \[trial number 1-5\]
+```
+
+Example:
+```bash
+python analyze_logs.py --config default --run 4
+```
+
+The script will:
+1. Analyze a specific experiment run in the `experiments` directory
+2. Generate comprehensive statistics and observations
+3. Output results to `observations_{config}_{run number}.md`
+
+### Output
+
+The generated `observations_{config}_{run number}.md` file contains:
+- System characteristics for each configuration
+- Message pattern analysis
+- Logical clock behavior analysis
+- Queue behavior analysis
+- Comparative analysis between configurations
