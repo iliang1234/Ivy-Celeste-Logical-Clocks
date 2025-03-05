@@ -7,8 +7,8 @@ BASE_PORT = 5000
 MIN_RANDOM = 1
 MAX_RANDOM = 10
 # Increased external events (send) to reduce internal event probability to 0.3
-SEND_TO_ONE = [1, 2, 3, 4]  # 40% chance to send to one
-SEND_TO_ALL = [5, 6, 7]     # 30% chance to send to all
+SEND_TO_ONE = [1, 2, 3, 4, 5]  # 40% chance to send to one
+SEND_TO_ALL = [6, 7, 8, 9, 10]     # 30% chance to send to all
 # Remaining 30% (8,9,10) are internal events
 
 # Clock settings - smaller variation

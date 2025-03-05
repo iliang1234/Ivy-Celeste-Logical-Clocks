@@ -1,6 +1,4 @@
-#!/bin/sh
-'''exec' "/Users/iliang/Desktop/CS 2620/Ivy-Celeste-Logical-Clocks/venv/bin/python" "$0" "$@"
-' '''
+#!/Users/celestecz/Downloads/CS262/Ivy-Celeste-Logical-Clocks/venv/bin/python3.13
 # -*- coding: utf-8 -*-
 import re
 import sys
