@@ -144,3 +144,33 @@ The generated `observations_{config}_{run number}.md` file contains:
 - Logical clock behavior analysis
 - Queue behavior analysis
 - Comparative analysis between configurations
+
+## Testing
+
+The project includes a comprehensive test suite that verifies the functionality of both `main.py` and `virtual_machine.py`. The tests are written using Python's `unittest` framework with `pytest` and `pytest-asyncio` for handling asynchronous operations.
+
+### Running Tests
+
+To run the test suite:
+```bash
+python -m pytest test_logical_clocks.py -v
+```
+
+### Test Coverage
+
+The test suite covers:
+
+1. Virtual Machine Core Functionality:
+   - Initialization and configuration
+   - Logical clock updates
+   - Message sending and receiving
+   - Connection handling
+   - Internal event processing
+
+2. Main System Setup:
+   - Machine creation
+   - Server initialization
+   - Inter-machine connections
+   - System run loop
+
+Each test is designed to run in isolation with its own test configuration and logging directory, ensuring reliable and repeatable results.
